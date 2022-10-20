@@ -727,7 +727,7 @@ let currentPiChart = new Chart(pie1, {
     ],
   },
   options: {
-    cutout: 80,
+    cutout: 40,
     responsive: true,
   },
 });
