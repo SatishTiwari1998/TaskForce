@@ -110,6 +110,37 @@
   font-size: 1.3rem;
   font-weight: 500;
 }
+.nav-section .navbar .togglers-box {
+  color: white;
+  gap: 10px;
+  margin: 0 20px;
+}
+.nav-section .navbar .togglers-box .theme-toggler span {
+  background: #f0f1f3;
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.nav-section .navbar .togglers-box .ui-toggler span {
+  background: #f0f1f3;
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
 
 .nav-tab-section .nav-large-devices .nav-tabs {
   padding-top: 60px;
@@ -125,13 +156,22 @@
   position: fixed;
   bottom: 0;
   background: white;
-  padding-top: 0;
+  box-shadow: 2px -1px 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
   width: 100%;
 }
 .nav-tab-section .nav-small-devices .nav-tabs .nav-item {
   padding: 5px 10px;
   border: 0;
   font-size: 1.2rem;
+}
+.nav-tab-section .nav-small-devices .nav-tabs .nav-item.active {
+  color: #044678 !important;
+  transform: scale(1.3);
+  transition: all ease-in 150ms;
+}
+.nav-tab-section .nav-small-devices .nav-tabs .nav-item:not(.active) {
+  color: grey;
 }
 
 .welcome-page {
@@ -143,6 +183,24 @@
 .welcome-page .text p {
   color: #044678;
   font-size: 1.3rem;
+}
+.welcome-page .accordion .accordion-item {
+  border: 0 !important;
+}
+.welcome-page .accordion .accordion-button {
+  border-bottom: 1px solid #3378A5 !important;
+}
+.welcome-page .accordion .accordion-body {
+  border-bottom: 2px solid #3378A5 !important;
+}
+.welcome-page .accordion .accordion-button:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.welcome-page .accordion .accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #102E4A;
+  border: none !important;
 }
 
 .to-do-app .input-field {
@@ -630,9 +688,6 @@
 #nav-dashboard .current-stats .task-count-box .completed:hover .completed-count {
   color: white;
   border-bottom: 4px solid white;
-}
-#nav-dashboard .overall-stats {
-  margin-top: 30px !important;
 }
 #nav-dashboard .overall-stats .task-count-box {
   margin-top: 30px;

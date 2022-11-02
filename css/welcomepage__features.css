@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* general styling */
+
+:root {
+  /* Primary */
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+.features{
+    margin-bottom: 20px;
+}
+.feature {
+  position: relative;
+  max-width: 21rem;
+  height: 15rem;
+  margin: 10px auto;
+  padding: 2em;
+  border-radius: 0.75em;
+  box-shadow: 5px 5px 20px rgba(0 0 0/0.15);
+  text-align: left;
+  transition: transform 200ms ease-in;
+}
+
+.feature:hover {
+  transform: scale(1.03);
+}
+
+.feature__desc {
+  margin-top: 0.5em;
+  color: var(--Grayish-Blue);
+}
+
+
+/* separate styling */
+
+.section__title {
+  margin: 0 auto;
+  max-width: 90%;
+  font-size: 1.65rem;
+  font-weight: 300;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.section__title span {
+  font-weight: 700;
+}
+
+.section__desc {
+  max-width: 32ch;
+  margin: 1rem auto 3rem;
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.feature-one {
+  border-top: 5px solid var(--Cyan);
+}
+
+.feature-two {
+  border-top: 5px solid var(--Red);
+}
+
+.feature-three {
+  border-top: 5px solid var(--Orange);
+}
+
+.feature-four {
+  border-top: 5px solid var(--Blue);
+}
+
+
+

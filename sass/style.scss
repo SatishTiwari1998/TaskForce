@@ -11,6 +11,12 @@
     $little-boy-blue:#57A4FF;
     $star-command-blue:#3378A5;
 
+    $c1:#3D3A4B;
+    $c2:#937666;
+    $c3:#B19994;
+    $c4:#D3C0CD;
+    $c5:#E3DFFF;
+
 
 
 /* Scroll bar customization */
@@ -19,6 +25,7 @@
 ::-webkit-scrollbar {
     width: 8px;
   }
+
   
   /* Track */
   ::-webkit-scrollbar-track {
@@ -145,6 +152,35 @@
         }
       }
     }
+    .togglers-box{
+      color: white;
+      gap: 10px;
+      margin: 0 20px;
+      .theme-toggler{
+        span{
+          background: #f0f1f3;
+          padding: 5px;
+          border-radius: 10px;
+          color: black;
+          cursor: pointer;
+          user-select: none;
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+      }
+      .ui-toggler{
+        span{
+          background: #f0f1f3;
+          padding: 5px;
+          border-radius: 10px;
+          color: black;
+          cursor: pointer;
+          user-select: none;
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+      }
+    }
   }
 }
 
@@ -165,12 +201,22 @@
       position: fixed;
       bottom: 0;
       background: white;
-      padding-top: 0;
+      box-shadow: 2px -1px 10px 5px rgb(0 0 0 / 20%);
+      padding: 10px 0;
       width: 100%;
       .nav-item{
         padding: 5px 10px;
         border: 0;
         font-size: 1.2rem;
+      }
+      .nav-item.active{
+        color:#044678 !important;
+        transform: scale(1.3);
+        transition: all ease-in 150ms;
+      }
+      .nav-item:not(.active)
+      {
+        color: grey;
       }
     }
   }
@@ -187,6 +233,31 @@
       color: #044678;
       font-size: 1.3rem;
     }
+  }
+
+  .accordion{
+  .accordion-item{
+    border: 0 !important;
+  }
+  .accordion-button{
+    border-bottom: 1px solid $star-command-blue !important;
+  }
+
+  .accordion-body{
+    border-bottom: 2px solid $star-command-blue !important;
+  }
+
+  .accordion-button:focus{
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+  .accordion-button:not(.collapsed) {
+    color: white;
+    background-color: $prussian-blue;
+    border: none !important;
+  }
+
+
   }
 }
 
@@ -582,7 +653,6 @@
   .searched-items-display-box{
     width: 100%;
     padding: 20px;
-    // box-shadow:0px 1px 2px 2px rgb(18 88 103 / 37%);
     border-radius:5px;
     overflow: hidden;
 
@@ -768,7 +838,6 @@
   }
 
   .overall-stats{
-    margin-top: 30px !important;
     .task-count-box{
       margin-top: 30px;
       gap: 10px;
@@ -1920,6 +1989,7 @@
   }
 
 }
+
 
 
 
