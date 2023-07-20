@@ -1,0 +1,16 @@
+.welcome-page{
+    @media (min-width:576px){
+        padding:10px 20px !important;
+    }
+    .features{
+        @media (min-width:576px){
+            margin-top:20px;
+        }
+
+        .features-display-box{
+            @media (min-width:576px){
+                margin-top:25px;
+            }
+        }
+    }
+}
