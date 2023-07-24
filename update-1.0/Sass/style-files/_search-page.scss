@@ -1,0 +1,33 @@
+.search-section{
+    .searched-items-display-box{
+        @media (min-width:576px){
+            padding:10px 20px 25px 20px !important;
+
+        }
+        .searched-items{
+            @media (min-width:576px){
+                margin-top:25px !important;
+                gap:0px !important;
+                display:grid !important;
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+
+            >div{
+
+                @media (min-width:576px){
+                    margin:0 auto;
+                }
+
+                .card{
+                    @media (min-width:576px){
+                        margin-bottom: 20px;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
