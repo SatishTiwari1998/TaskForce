@@ -1,0 +1,77 @@
+.to-do-app{
+    .task-box{
+        gap:0 !important;
+
+        >div:not(:nth-child(1)){
+            margin-top:25px;
+        }
+
+        .task-display-box{
+
+            @media (min-width:576px){
+                padding:10px 20px !important
+            }
+
+            .list-view{
+                @media (min-width:576px){
+                    margin-top:25px;
+                }
+            }
+
+        }
+
+        .priority-task-display-box{
+            @media (min-width:576px){
+                padding:10px 20px !important;
+                padding-bottom:25px !important;
+            }
+
+            .priority-tasks{
+                @media (min-width:576px){
+                    margin-top:25px !important;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding: 0 10px;
+                    gap:0 !important;
+                }
+                > div{
+                    @media (min-width:576px){
+                        margin: 0 auto;
+                    }
+
+                    .card{
+                        margin-bottom:20px;
+                    }
+                }
+            }
+
+        }
+
+        .completed-task-display-box{
+            @media (min-width:576px){
+                padding:10px 20px !important;
+                padding-bottom:25px !important;
+            }
+
+            .completed-tasks{
+                @media (min-width:576px){
+                    margin-top:25px !important;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding: 0 10px;
+                    gap:0 !important;
+                }
+                > div{
+                    @media (min-width:576px){
+                        margin: 0 auto;
+                    }
+
+                    .card{
+                        margin-bottom:20px;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,6 +1,7 @@
 .welcome-page{
     @media (min-width:576px){
         padding:10px 20px !important;
+        padding-bottom:20px !important;
     }
     .features{
         @media (min-width:576px){
@@ -12,5 +13,15 @@
                 margin-top:25px;
             }
         }
+    }
+
+    .faqs{
+
+        .accordion{
+            @media (min-width:576px){
+                margin-top:20px;
+            }
+        }
+
     }
 }
