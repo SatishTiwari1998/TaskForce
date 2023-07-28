@@ -1,77 +1,215 @@
-.to-do-app{
-    .task-box{
-        gap:0 !important;
+.to-do-app {
+  .task-box {
+    gap: 0 !important;
 
-        >div:not(:nth-child(1)){
-            margin-top:25px;
-        }
-
-        .task-display-box{
-
-            @media (min-width:576px){
-                padding:10px 20px !important
-            }
-
-            .list-view{
-                @media (min-width:576px){
-                    margin-top:25px;
-                }
-            }
-
-        }
-
-        .priority-task-display-box{
-            @media (min-width:576px){
-                padding:10px 20px !important;
-                padding-bottom:25px !important;
-            }
-
-            .priority-tasks{
-                @media (min-width:576px){
-                    margin-top:25px !important;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    padding: 0 10px;
-                    gap:0 !important;
-                }
-                > div{
-                    @media (min-width:576px){
-                        margin: 0 auto;
-                    }
-
-                    .card{
-                        margin-bottom:20px;
-                    }
-                }
-            }
-
-        }
-
-        .completed-task-display-box{
-            @media (min-width:576px){
-                padding:10px 20px !important;
-                padding-bottom:25px !important;
-            }
-
-            .completed-tasks{
-                @media (min-width:576px){
-                    margin-top:25px !important;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    padding: 0 10px;
-                    gap:0 !important;
-                }
-                > div{
-                    @media (min-width:576px){
-                        margin: 0 auto;
-                    }
-
-                    .card{
-                        margin-bottom:20px;
-                    }
-                }
-            }
-
-        }
+    > div:not(:nth-child(1)) {
+      margin-top: 25px;
     }
+
+    .task-display-box {
+      @media (min-width: 576px) {
+        padding: 10px 20px !important;
+      }
+
+      @media (min-width: 992px) {
+        padding: 20px 40px !important;
+      }
+
+      .task-heading {
+        h2 {
+          @media (min-width: 992px) {
+            font-size: 32px;
+            line-height: 120%;
+          }
+        }
+
+        button {
+          @media (min-width: 992px) {
+            width: unset;
+            height: unset;
+            padding: 8px 16px;
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .list-view {
+        @media (min-width: 576px) {
+          margin-top: 25px;
+        }
+
+        @media (min-width: 992px) {
+          margin-top: 25px;
+        }
+
+        .task-list {
+          @media (min-width: 992px) {
+            max-height: 600px;
+          }
+
+          li:nth-child(3n),
+          li:nth-child(3n + 1),
+          li:nth-child(3n + 2) {
+            @media (min-width: 992px) {
+              margin: 0;
+              padding: 10px 15px;
+            }
+
+            p {
+              @media (min-width: 992px) {
+                padding: 0;
+              }
+            }
+          }
+
+          li {
+            @media (min-width: 992px) {
+              margin: 0;
+              letter-spacing: 0.2px;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 120%;
+            }
+
+            .task-action {
+              button {
+                @media (min-width: 992px) {
+                  font-size: 12px !important;
+                }
+              }
+            }
+          }
+
+          li:not(:nth-child(1)) {
+            @media (min-width: 992px) {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .priority-task-display-box {
+      @media (min-width: 576px) {
+        padding: 10px 20px !important;
+        padding-bottom: 25px !important;
+      }
+      @media (min-width: 992px) {
+        padding: 20px 40px !important;
+      }
+
+      .priority-heading {
+        h2 {
+          @media (min-width: 992px) {
+            font-size: 32px;
+            line-height: 120%;
+          }
+        }
+
+        button {
+          @media (min-width: 992px) {
+            width: unset;
+            height: unset;
+            padding: 8px 16px;
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .priority-tasks {
+        @media (min-width: 576px) {
+          margin-top: 25px !important;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding: 0 10px;
+          gap: 0 !important;
+        }
+
+        @media (min-width: 992px) {
+          max-height: 600px;
+          max-width: 776px;
+          margin: 0 auto;
+          margin-top: 35px !important;
+        }
+        > div {
+          @media (min-width: 576px) {
+            margin: 0 auto;
+          }
+
+          .card {
+            @media (min-width: 576px) {
+              margin-bottom: 20px;
+            }
+            @media (min-width: 992px) {
+              margin-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .completed-task-display-box {
+      @media (min-width: 576px) {
+        padding: 10px 20px !important;
+        padding-bottom: 25px !important;
+      }
+
+      @media (min-width: 992px) {
+        padding: 20px 40px !important;
+      }
+
+      .completed-heading {
+        h2 {
+          @media (min-width: 992px) {
+            font-size: 32px;
+            line-height: 120%;
+          }
+        }
+
+        button {
+          @media (min-width: 992px) {
+            width: unset;
+            height: unset;
+            padding: 8px 16px;
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .completed-tasks {
+        @media (min-width: 576px) {
+          margin-top: 25px !important;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding: 0 10px;
+          gap: 0 !important;
+        }
+
+        @media (min-width: 992px) {
+          max-height: 600px;
+          max-width: 776px;
+          margin: 0 auto;
+          margin-top: 35px !important;
+        }
+        > div {
+          @media (min-width: 576px) {
+            margin: 0 auto;
+          }
+
+          .card {
+            @media (min-width: 576px) {
+              margin-bottom: 20px;
+            }
+
+            @media (min-width: 992px) {
+              margin-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -6,8 +6,78 @@
 
         }
 
-        @media (min-width:991px){
+        @media (min-width:992px){
             padding:30px 40px;
+        }
+
+        .navbar-brand{
+            @media (min-width:992px){
+                font-size:2.5rem;
+            }
+        }
+
+        .collapse{
+            .navbar-nav{
+                .nav-item{
+                    .image-box{
+                        @media (min-width:992px){
+                            width:60px !important;
+                            height:60px !important;
+
+                        }
+
+                    }
+
+                    #username{
+                        @media (min-width:992px){
+                            font-size:1.5rem;
+
+                        }
+
+                    }
+
+
+                }
+            }
+            .togglers-box{
+
+                @media (min-width:992px){
+                    gap:0;
+                }
+
+
+                .theme-toggler{
+                    .toggle-theme-button{
+
+                        @media (min-width:992px){
+                            padding:5px 10px;
+                            font-size:18px;
+                            line-height: 100%;
+
+
+                        }
+
+
+                    }
+
+                }
+
+                .ui-toggler{
+                    .toggle-ui-button{
+
+                        @media (min-width:992px){
+                            padding:5px 10px;
+                            font-size:18px;
+                            line-height: 100%;
+                            margin-left:20px;
+
+                        }
+
+
+                    }
+
+                }
+            }
         }
     }
 }
@@ -19,9 +89,18 @@
                 padding-top: 104px;
             }
 
+            @media (min-width:992px){
+                padding-top:128px;
+            }
+
             .nav-link{
                 @media (min-width:576px){
                     padding:10px 20px;
+                }
+
+                @media (min-width:992px){
+                    padding: 15px 40px;
+                    font-size:20px;
                 }
             }
 
