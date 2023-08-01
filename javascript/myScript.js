@@ -9,11 +9,15 @@ window.onload = () => {
   if (sessionStorage.getItem("userName") === null) {
     let person = prompt("Enter your name !");
     sessionStorage.setItem("userName", person);
+    const welcome_name=document.getElementById("welcome-username");
     const userName = document.getElementById("username");
-    userName.innerHTML = sessionStorage.getItem("userName");
+    userName.innerHTML = capitalizeFirstLetter(sessionStorage.getItem("userName"));
+    welcome_name.innerHTML=capitalizeFirstLetter(sessionStorage.getItem("userName"));
   } else {
     const userName = document.getElementById("username");
-    userName.innerHTML = sessionStorage.getItem("userName");
+    const welcome_name=document.getElementById("welcome-username");
+    userName.innerHTML = capitalizeFirstLetter(sessionStorage.getItem("userName"));
+    welcome_name.innerHTML=capitalizeFirstLetter(sessionStorage.getItem("userName"));
   }
 };
 /////////////////////// Variable Declarations ////////////////////
@@ -70,6 +74,12 @@ if (
   localStorage.getItem("oa_dl") === null
 ) {
   localStorage.setItem("oa_dl",0);
+}
+
+///////////////////////  Capitalize function for username ///////////////////////////////////////
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 
