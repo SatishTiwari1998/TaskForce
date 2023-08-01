@@ -12,6 +12,32 @@
   .header {
     .text {
       h2 {
+        .mob-hide{
+          display: none;
+          @media (min-width:1200px){
+            display:block;
+          }
+        }
+
+        #welcome-username{
+          font-size: 25px;
+          line-height: 120%;
+          color: rgb(11, 154, 11);
+          font-weight: 700;
+          @media (min-width:576px){
+            font-size:28px;
+          }
+
+          @media (min-width:768px){
+            font-size:44px;
+          }
+          @media (min-width:992px){
+            font-size:46px;
+          }
+          @media (min-width:1200px){
+            font-size:80px;
+          }
+        }
         @media (min-width: 992px) {
           font-size: 32px;
           line-height: 110%;
@@ -48,6 +74,13 @@
         max-width: 776px;
         margin: 0 auto;
         margin-top: 35px;
+      }
+
+      @media (min-width:1200px){
+        max-width: 1000px;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1100px;
       }
 
       .feature {
