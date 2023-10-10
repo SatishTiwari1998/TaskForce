@@ -3,6 +3,9 @@
         padding:30px 20px !important;
 
     }
+    @media (min-width:992px){
+        padding:30px 40px !important;
+    }
 
 
     .text-center{
@@ -10,6 +13,15 @@
             font-size:16px;
             line-height:130%;
         }
+        @media(min-width:992px){
+            font-size:20px
+        }
 
+    }
+
+    .text-center:nth-child(2){
+        @media(min-width:992px){
+            margin-top:10px !important;
+        }
     }
 }

@@ -1,16 +1,142 @@
-.welcome-page{
-    @media (min-width:576px){
-        padding:10px 20px !important;
-    }
-    .features{
-        @media (min-width:576px){
-            margin-top:20px;
+.welcome-page {
+  @media (min-width: 576px) {
+    padding: 10px 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  @media (min-width: 992px) {
+    padding: 10px 40px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .header {
+    .text {
+      h2 {
+        .mob-hide{
+          display: none;
+          @media (min-width:1200px){
+            display:block;
+          }
         }
 
-        .features-display-box{
-            @media (min-width:576px){
-                margin-top:25px;
-            }
+        #welcome-username{
+          font-size: 25px;
+          line-height: 120%;
+          color: rgb(11, 154, 11);
+          font-weight: 700;
+          font-family: 'Poppins', sans-serif;
+          @media (min-width:576px){
+            font-size:28px;
+          }
+
+          @media (min-width:768px){
+            font-size:44px;
+          }
+          @media (min-width:992px){
+            font-size:46px;
+          }
+          @media (min-width:1200px){
+            font-size:80px;
+          }
         }
+        @media (min-width: 992px) {
+          font-size: 32px;
+          line-height: 110%;
+        }
+      }
+
+      p {
+        @media (min-width: 992px) {
+          font-size: 22px !important;
+          line-height: 120%;
+        }
+      }
     }
+  }
+
+  .features {
+    @media (min-width: 576px) {
+      margin-top: 20px;
+    }
+
+    h2 {
+      @media (min-width: 992px) {
+        font-size: 32px;
+        line-height: 120%;
+      }
+    }
+
+    .features-display-box {
+      @media (min-width: 576px) {
+        margin-top: 25px;
+      }
+
+      @media (min-width: 992px) {
+        max-width: 776px;
+        margin: 0 auto;
+        margin-top: 35px;
+      }
+
+      @media (min-width:1200px){
+        max-width: 1000px;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1100px;
+      }
+
+      .feature {
+        @media (min-width: 992px) {
+          height: unset;
+          padding: 1.5em;
+        }
+        .feature__desc {
+          @media (min-width: 992px) {
+            font-size: 20px;
+            line-height: 120%;
+          }
+        }
+      }
+    }
+  }
+
+  .faqs {
+    @media (min-width: 992px) {
+      margin-top: 50px;
+    }
+
+    h3 {
+      @media (min-width: 992px) {
+        font-size: 32px;
+        line-height: 120%;
+      }
+    }
+
+    .accordion {
+      @media (min-width: 576px) {
+        margin-top: 20px;
+      }
+
+      .accordion-item {
+        h2 {
+          button {
+            @media (min-width: 992px) {
+              font-size: 20px;
+              line-height: 120%;
+              padding: 25px 20px;
+            }
+          }
+        }
+
+        .accordion-collapse {
+          .accordion-body {
+            @media (min-width: 992px) {
+              font-size: 20px;
+              line-height: 120%;
+              padding: 25px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
