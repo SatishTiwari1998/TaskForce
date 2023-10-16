@@ -3,15 +3,70 @@
     padding: 30px 20px;
   }
 }
+@media (min-width: 992px) {
+  .nav-section .navbar {
+    padding: 30px 40px;
+  }
+}
+@media (min-width: 992px) {
+  .nav-section .navbar .navbar-brand {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .nav-section .navbar .collapse .navbar-nav .nav-item .image-box {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+@media (min-width: 992px) {
+  .nav-section .navbar .collapse .navbar-nav .nav-item #username {
+    font-size: 1.5rem;
+  }
+}
+.nav-section .navbar .collapse .togglers-box {
+  display: none !important;
+}
+@media (min-width: 992px) {
+  .nav-section .navbar .collapse .togglers-box {
+    gap: 0;
+  }
+}
+@media (min-width: 992px) {
+  .nav-section .navbar .collapse .togglers-box .theme-toggler .toggle-theme-button {
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .nav-section .navbar .collapse .togglers-box .ui-toggler .toggle-ui-button {
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 100%;
+    margin-left: 20px;
+  }
+}
 
 @media (min-width: 576px) {
   .nav-tab-section .nav-large-devices .nav-tabs {
     padding-top: 104px;
   }
 }
+@media (min-width: 992px) {
+  .nav-tab-section .nav-large-devices .nav-tabs {
+    padding-top: 128px;
+  }
+}
 @media (min-width: 576px) {
   .nav-tab-section .nav-large-devices .nav-tabs .nav-link {
     padding: 10px 20px;
+  }
+}
+@media (min-width: 992px) {
+  .nav-tab-section .nav-large-devices .nav-tabs .nav-link {
+    padding: 15px 40px;
+    font-size: 20px;
   }
 }
 
@@ -20,16 +75,85 @@
     padding: 30px 20px !important;
   }
 }
+@media (min-width: 992px) {
+  .footer-section {
+    padding: 30px 40px !important;
+  }
+}
 @media (min-width: 576px) {
   .footer-section .text-center {
     font-size: 16px;
     line-height: 130%;
   }
 }
+@media (min-width: 992px) {
+  .footer-section .text-center {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .footer-section .text-center:nth-child(2) {
+    margin-top: 10px !important;
+  }
+}
 
 @media (min-width: 576px) {
   .welcome-page {
     padding: 10px 20px !important;
+    padding-bottom: 20px !important;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-page {
+    padding: 10px 40px !important;
+    padding-bottom: 30px !important;
+  }
+}
+.welcome-page .header .text h2 .mob-hide {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .welcome-page .header .text h2 .mob-hide {
+    display: block;
+  }
+}
+.welcome-page .header .text h2 #welcome-username {
+  font-size: 25px;
+  line-height: 120%;
+  color: rgb(11, 154, 11);
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 576px) {
+  .welcome-page .header .text h2 #welcome-username {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) {
+  .welcome-page .header .text h2 #welcome-username {
+    font-size: 44px;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-page .header .text h2 #welcome-username {
+    font-size: 46px;
+  }
+}
+@media (min-width: 1200px) {
+  .welcome-page .header .text h2 #welcome-username {
+    font-size: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-page .header .text h2 {
+    font-size: 32px;
+    line-height: 110%;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-page .header .text p {
+    font-size: 22px !important;
+    line-height: 120%;
   }
 }
 @media (min-width: 576px) {
@@ -37,8 +161,370 @@
     margin-top: 20px;
   }
 }
+@media (min-width: 992px) {
+  .welcome-page .features h2 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
 @media (min-width: 576px) {
   .welcome-page .features .features-display-box {
     margin-top: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-page .features .features-display-box {
+    max-width: 776px;
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .welcome-page .features .features-display-box {
+    max-width: 1000px;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1100px;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-page .features .features-display-box .feature {
+    height: unset;
+    padding: 1.5em;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-page .features .features-display-box .feature .feature__desc {
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-page .faqs {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-page .faqs h3 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
+@media (min-width: 576px) {
+  .welcome-page .faqs .accordion {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-page .faqs .accordion .accordion-item h2 button {
+    font-size: 20px;
+    line-height: 120%;
+    padding: 25px 20px;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-page .faqs .accordion .accordion-item .accordion-collapse .accordion-body {
+    font-size: 20px;
+    line-height: 120%;
+    padding: 25px 20px;
+  }
+}
+
+.to-do-app .task-box {
+  gap: 0 !important;
+}
+.to-do-app .task-box > div:not(:nth-child(1)) {
+  margin-top: 25px;
+}
+@media (min-width: 576px) {
+  .to-do-app .task-box .task-display-box {
+    padding: 10px 20px !important;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .task-display-box {
+    padding: 20px 40px !important;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .task-display-box .task-heading h2 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .task-display-box .task-heading button {
+    width: unset;
+    height: unset;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 576px) {
+  .to-do-app .task-box .task-display-box .list-view {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .task-display-box .list-view {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .task-display-box .list-view .task-list {
+    max-height: 600px;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .task-display-box .list-view .task-list li:nth-child(3n),
+.to-do-app .task-box .task-display-box .list-view .task-list li:nth-child(3n+1),
+.to-do-app .task-box .task-display-box .list-view .task-list li:nth-child(3n+2) {
+    margin: 0;
+    padding: 10px 15px;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .task-display-box .list-view .task-list li:nth-child(3n) p,
+.to-do-app .task-box .task-display-box .list-view .task-list li:nth-child(3n+1) p,
+.to-do-app .task-box .task-display-box .list-view .task-list li:nth-child(3n+2) p {
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .task-display-box .list-view .task-list li {
+    margin: 0;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .task-display-box .list-view .task-list li .task-action button {
+    font-size: 12px !important;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .task-display-box .list-view .task-list li:not(:nth-child(1)) {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 576px) {
+  .to-do-app .task-box .priority-task-display-box {
+    padding: 10px 20px !important;
+    padding-bottom: 25px !important;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .priority-task-display-box {
+    padding: 20px 40px !important;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .priority-task-display-box .priority-heading h2 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .priority-task-display-box .priority-heading button {
+    width: unset;
+    height: unset;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 576px) {
+  .to-do-app .task-box .priority-task-display-box .priority-tasks {
+    margin-top: 25px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10px;
+    gap: 0 !important;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .priority-task-display-box .priority-tasks {
+    max-height: 600px;
+    max-width: 776px;
+    margin: 0 auto;
+    margin-top: 35px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .to-do-app .task-box .priority-task-display-box .priority-tasks {
+    max-height: 800px;
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 576px) {
+  .to-do-app .task-box .priority-task-display-box .priority-tasks > div {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 576px) {
+  .to-do-app .task-box .priority-task-display-box .priority-tasks > div .card {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .priority-task-display-box .priority-tasks > div .card {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 576px) {
+  .to-do-app .task-box .completed-task-display-box {
+    padding: 10px 20px !important;
+    padding-bottom: 25px !important;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .completed-task-display-box {
+    padding: 20px 40px !important;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .completed-task-display-box .completed-heading h2 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .completed-task-display-box .completed-heading button {
+    width: unset;
+    height: unset;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 576px) {
+  .to-do-app .task-box .completed-task-display-box .completed-tasks {
+    margin-top: 25px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10px;
+    gap: 0 !important;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .completed-task-display-box .completed-tasks {
+    max-height: 600px;
+    max-width: 776px;
+    margin: 0 auto;
+    margin-top: 35px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .to-do-app .task-box .completed-task-display-box .completed-tasks {
+    max-height: 800px;
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 576px) {
+  .to-do-app .task-box .completed-task-display-box .completed-tasks > div {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 576px) {
+  .to-do-app .task-box .completed-task-display-box .completed-tasks > div .card {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .to-do-app .task-box .completed-task-display-box .completed-tasks > div .card {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 576px) {
+  .search-section .searched-items-display-box {
+    padding: 10px 20px 25px 20px !important;
+  }
+}
+@media (min-width: 992px) {
+  .search-section .searched-items-display-box {
+    padding: 20px 40px !important;
+  }
+}
+@media (min-width: 992px) {
+  .search-section .searched-items-display-box .search-heading h2 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
+@media (min-width: 992px) {
+  .search-section .searched-items-display-box .search-heading button {
+    width: unset;
+    height: unset;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 576px) {
+  .search-section .searched-items-display-box .searched-items {
+    margin-top: 25px !important;
+    gap: 0px !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .search-section .searched-items-display-box .searched-items {
+    margin-top: 35px !important;
+    max-height: 700px;
+    max-width: 776px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 576px) {
+  .search-section .searched-items-display-box .searched-items > div {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 576px) {
+  .search-section .searched-items-display-box .searched-items > div .card {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .search-section .searched-items-display-box .searched-items > div .card {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 576px) {
+  #nav-dashboard {
+    padding: 10px 20px 25px 20px !important;
+  }
+}
+@media (min-width: 992px) {
+  #nav-dashboard {
+    padding: 20px 40px !important;
+  }
+}
+@media (min-width: 992px) {
+  #nav-dashboard h3 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
+@media (min-width: 576px) {
+  #nav-dashboard .overall-stats {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .to-do-app #task-list, .to-do-app .priority-tasks, .to-do-app .completed-tasks {
+    min-height: 250px;
+  }
+  .search-section .searched-items {
+    min-height: 600px;
   }
 }/*# sourceMappingURL=update-1.0.css.map */

@@ -1,0 +1,15 @@
+@media (max-width:480px){
+
+    .to-do-app{
+        #task-list, .priority-tasks,.completed-tasks{
+            min-height: 250px;
+        }
+    }
+
+    .search-section{
+        .searched-items{
+            min-height: 700px;
+        }
+    }
+
+}
