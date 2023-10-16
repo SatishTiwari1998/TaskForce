@@ -1523,7 +1523,7 @@ body {
     width: 270px !important;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .nav-tab-section .nav-large-devices {
     display: none !important;
   }
@@ -2056,5 +2056,14 @@ body {
 @media (min-width: 576px) {
   #nav-dashboard .overall-stats {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .to-do-app #task-list, .to-do-app .priority-tasks, .to-do-app .completed-tasks {
+    min-height: 250px;
+  }
+  .search-section .searched-items {
+    min-height: 700px;
   }
 }/*# sourceMappingURL=base.css.map */
