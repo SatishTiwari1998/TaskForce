@@ -1522,7 +1522,7 @@ body {
     width: 270px !important;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .nav-tab-section .nav-large-devices {
     display: none !important;
   }

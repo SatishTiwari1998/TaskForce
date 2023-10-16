@@ -518,4 +518,13 @@
   #nav-dashboard .overall-stats {
     margin-top: 30px;
   }
+}
+
+@media (max-width: 480px) {
+  .to-do-app #task-list, .to-do-app .priority-tasks, .to-do-app .completed-tasks {
+    min-height: 250px;
+  }
+  .search-section .searched-items {
+    min-height: 600px;
+  }
 }/*# sourceMappingURL=update-1.0.css.map */
